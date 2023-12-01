@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
-    <section className='earth-background h-1'>
-      <div className='screen-overlay relative top-0 left-0 right-0 bottom-0 '></div>
+    <section className='earth-background relative flex h-1'>
+      <div className='screen-overlay relative top-0 left-0 right-0 bottom-0'></div>
 
       {/* Text & Button */}
-      <div className=' items-start mt-10  md:mt-32 lg:mt-14 ml-12 '>
-        <div className=' mb-52'>
+      <div className=' items-start mt-10  md:mt-32 lg:mt-32 ml-12 z-10'>
+        <div className='mb-24'>
           <h1 className='font-title2 text-4xl md:text-4xl lg:text-7xl font-extrabold tracking-wide'>
             DISCOVER NEW HORIZONS
           </h1>
@@ -32,19 +32,21 @@ const Hero = () => {
             More info
           </Link>
         </div>
-        <div className='overflow-x-hidden'>
+        {/* Carousel */}
+        <div className='z-20 flex-col '>
           {/* Trending Now */}
 
-          <h3 className='font-title text-lg font-bold mb-2'>Trending Now</h3>
-          <div className='carousel rounded-box mb-8'>
-            <div className='carousel-item'>
+          <h3 className='font-title text-lg font-bold mb-2 relative'>Trending Now</h3>
+          <div className='carousel  rounded-box mb-8'>
+            <div className='carousel-item flex-auto'>
               {dummyData.slice(0, 6).map(card => (
-                <Card
-                  key={card.id}
-                  title={card.title}
-                  imageUrl={card.imageUrl}
-                  className='wide-card mr-3'
-                />
+                <Link to={`/${card.title}`} key={card.id}>
+                  <Card
+                    title={card.title}
+                    imageUrl={card.imageUrl}
+                    className='wide-card mr-3'
+                  />
+                </Link>
               ))}
             </div>
           </div>
@@ -53,12 +55,13 @@ const Hero = () => {
           <div className='carousel rounded-box mb-8'>
             <div className='carousel-item'>
               {dummyData.slice(0, 6).map(card => (
-                <Card
-                  key={card.id}
-                  title={card.title}
-                  imageUrl={card.imageUrl}
-                  className='wide-card mr-3'
-                />
+                <Link to={`/${card.title}`} key={card.id}>
+                  <Card
+                    title={card.title}
+                    imageUrl={card.imageUrl}
+                    className='wide-card mr-3'
+                  />
+                </Link>
               ))}
             </div>
           </div>
@@ -67,12 +70,13 @@ const Hero = () => {
           <div className='carousel rounded-box mb-8'>
             <div className='carousel-item'>
               {dummyData.slice(0, 6).map(card => (
-                <Card
-                  key={card.id}
-                  title={card.title}
-                  imageUrl={card.imageUrl}
-                  className='wide-card mr-3'
-                />
+                <Link to={`/${card.title}`} key={card.id}>
+                  <Card
+                    title={card.title}
+                    imageUrl={card.imageUrl}
+                    className='wide-card mr-3'
+                  />
+                </Link>
               ))}
             </div>
           </div>
@@ -81,12 +85,13 @@ const Hero = () => {
           <div className='carousel rounded-box mb-8'>
             <div className='carousel-item'>
               {dummyData.slice(0, 6).map(card => (
-                <Card
-                  key={card.id}
-                  title={card.title}
-                  imageUrl={card.imageUrl}
-                  className='wide-card mr-3'
-                />
+                <Link to={`/${card.title}`} key={card.id}>
+                  <Card
+                    title={card.title}
+                    imageUrl={card.imageUrl}
+                    className='wide-card mr-3'
+                  />
+                </Link>
               ))}
             </div>
           </div>
@@ -95,12 +100,13 @@ const Hero = () => {
           <div className='carousel rounded-box mb-8'>
             <div className='carousel-item'>
               {dummyData.slice(0, 6).map(card => (
-                <Card
-                  key={card.id}
-                  title={card.title}
-                  imageUrl={card.imageUrl}
-                  className='wide-card mr-3'
-                />
+                <Link to={`/${card.title}`} key={card.id}>
+                  <Card
+                    title={card.title}
+                    imageUrl={card.imageUrl}
+                    className='wide-card mr-3'
+                  />
+                </Link>
               ))}
             </div>
           </div>
@@ -114,13 +120,13 @@ const Hero = () => {
                 <div className='relative' key={card.id}>
                   {/* Number Overlay */}
                   <p className='text-top-quest'>{index + 1}</p>
-
-                  {/* Card Component */}
-                  <Card
-                    title={card.title}
-                    imageUrl={card.imageUrl}
-                    className='large-card mr-3'
-                  />
+                  <Link>
+                    <Card
+                      title={card.title}
+                      imageUrl={card.imageUrl}
+                      className='large-card mr-3'
+                    />
+                  </Link>
                 </div>
               ))}
             </div>

@@ -3,7 +3,7 @@ import Hero from '../sections/home/Hero'
 
 const HomePage = () => {
   return (
-    <main>
+    <main className='overflow-x-hidden '>
       <Header/>
       <Hero />
     </main>
