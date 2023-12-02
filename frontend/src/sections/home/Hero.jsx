@@ -33,23 +33,29 @@ const Hero = () => {
           </Link>
         </div>
         {/* Carousel */}
-        <div className='z-20 flex-col '>
+        <div className='z-50'>
           {/* Trending Now */}
 
-          <h3 className='font-title text-lg font-bold mb-2 relative'>Trending Now</h3>
-          <div className='carousel  rounded-box mb-8'>
-            <div className='carousel-item flex-auto'>
-              {dummyData.slice(0, 6).map(card => (
+          <h3 className='font-title text-lg font-bold mb-2 relative'>
+            Trending Now
+          </h3>
+          <div className='carousel w-screen'>
+            {dummyData.slice(0, 6).map((card) => (
+              <div key={card.id} className='carousel-item w-full mr-0'>
                 <Link to={`/${card.title}`} key={card.id}>
-                  <Card
-                    title={card.title}
-                    imageUrl={card.imageUrl}
-                    className='wide-card mr-3'
-                  />
+                  <div>
+                    <img
+                      src={card.imageUrl}
+                      alt={card.title}
+                      key={card.id}
+                      className='wide-card mr-3'
+                    />
+                  </div>
                 </Link>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
+
           {/* Hiking */}
           <h3 className='font-title text-lg font-bold mb-2'>Hiking</h3>
           <div className='carousel rounded-box mb-8'>
