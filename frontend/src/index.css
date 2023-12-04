@@ -44,14 +44,6 @@
   /* opacity: 0.9; */
 }
 
-@media (max-width: 800px) {
-  .earth-background,
-  .jeep-background,
-  .screen-overlay {
-    min-height: 50vh;
-  }
-}
-
 /* Custom Card sizes */
 .small-card {
   position: relative;

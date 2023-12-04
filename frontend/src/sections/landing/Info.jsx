@@ -33,7 +33,7 @@ const Info = () => {
             <h1 className='font-title text-4xl lg:text-5xl tracking-wider font-semibold'>
               {role.name}
             </h1>
-            <p className='font-secondary text-center lg:text-start text-xs  lg:px-0 md:text-base lg:text-lg font-thin text-gray-500'>
+            <p className='font-secondary text-center lg:text-start text-xs px-6 md:px-10 lg:px-0 md:text-base lg:text-lg font-thin text-gray-500'>
               {role.description}
             </p>
             <div className='flex flex-row space-x-2'>

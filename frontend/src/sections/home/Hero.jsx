@@ -1,14 +1,17 @@
 import dummyData from '/src/data/dummyData.js'
 import Card from '/src/components/Card.jsx'
 import { Link } from 'react-router-dom'
+import Carousel from '../../components/Carousel'
 
 const Hero = () => {
   return (
-    <section className='earth-background relative flex h-1'>
-      <div className='screen-overlay relative top-0 left-0 right-0 bottom-0'></div>
+    <section className='relative min-h-screen flex'>
+      <div className='earth-background absolute top-0 left-0 right-0 h-1/2 w-full'>
+        <div className='screen-overlay'></div>
+      </div>
 
       {/* Text & Button */}
-      <div className=' items-start mt-10  md:mt-32 lg:mt-32 ml-12 z-10'>
+      <div className='items-start mt-28 lg:mt-32 ml-4 md:ml-10 lg:ml-12 z-10'>
         <div className='mb-24'>
           <h1 className='font-title2 text-4xl md:text-4xl lg:text-7xl font-extrabold tracking-wide'>
             DISCOVER NEW HORIZONS
@@ -33,28 +36,10 @@ const Hero = () => {
           </Link>
         </div>
         {/* Carousel */}
-        <div className='z-50'>
+        <div className='z-50 mt-10 md:mt-0'>
           {/* Trending Now */}
 
-          <h3 className='font-title text-lg font-bold mb-2 relative'>
-            Trending Now
-          </h3>
-          <div className='carousel w-screen'>
-            {dummyData.slice(0, 6).map((card) => (
-              <div key={card.id} className='carousel-item w-full mr-0'>
-                <Link to={`/${card.title}`} key={card.id}>
-                  <div>
-                    <img
-                      src={card.imageUrl}
-                      alt={card.title}
-                      key={card.id}
-                      className='wide-card mr-3'
-                    />
-                  </div>
-                </Link>
-              </div>
-            ))}
-          </div>
+          <Carousel />
 
           {/* Hiking */}
           <h3 className='font-title text-lg font-bold mb-2'>Hiking</h3>
