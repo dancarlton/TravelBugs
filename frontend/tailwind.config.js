@@ -11,7 +11,7 @@ export default {
         spacegrotesk: ['Space Grotesk', 'sans-serif'],
       },
       fontWeight: {
-        'boldest': 900,
+        'boldest': 1000,
       },
       letterSpacing: {
         tighter: '-0.05em',
