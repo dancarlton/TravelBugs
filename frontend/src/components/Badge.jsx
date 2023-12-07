@@ -1,22 +1,26 @@
+import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
-import { Link } from "react-router-dom"
-import questTypes from "../data/questTypes"
-
-
-
-const Badge = () => {
+const Badge = ({ badgeData, customStyle }) => {
   return (
     <div>
-      {questTypes.map((quest) => (
-        <Link to={`${quest.title}`} key={quest.id} className='btn btn-sm btn-ghost text-white border-white font-light rounded-full mt-5 h-5'
-        >
-          {quest.title}
+      {badgeData.map(item => (
+        <Link to={`${item.title}`} key={item.id} className={`${customStyle}`}>
+          {item.title}
         </Link>
       ))}
-
-
     </div>
   )
+}
+
+Badge.propTypes = {
+  badgeData: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  customStyle: PropTypes.string.isRequired,
 }
 
 export default Badge

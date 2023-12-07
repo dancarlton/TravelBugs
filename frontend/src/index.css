@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Backgrounds */
+/********** Custom Backgrounds ***********/
 .earth-background {
   background-image: url('/backgrounds/earth.jpg');
   background-size: cover;
@@ -44,7 +44,8 @@
   /* opacity: 0.9; */
 }
 
-/* Custom Card sizes */
+/********** Custom Cards ***********/
+
 .small-card {
   position: relative;
   object-fit: cover;
@@ -82,24 +83,15 @@
   object-fit: cover;
   background-size: contain;
   background-position: center;
-  margin-top: 36px; /* Adjusted to margin-top */
+  margin-top: 36px;
   width: 288px;
   height: 400px;
-  border-radius: 8px; /* Tailwind equivalent: rounded-lg */
-  overflow: hidden; /* Prevents vertical overflow */
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-/* Hide on screens larger than the 'md' breakpoint (i.e., desktops) */
-.hiddenOnDesktop {
-  @apply block md:hidden;
-}
+/********** Custom Texts ***********/
 
-/* Hide on screens smaller than the 'md' breakpoint (i.e., mobile devices) */
-.hiddenOnMobile {
-  @apply hidden md:block;
-}
-
-/* Text */
 .text-top-quest {
   position: absolute;
   top: -6px;
@@ -109,4 +101,43 @@
   font-weight: 700;
   line-height: 110px;
   color: #9095a080;
+}
+
+/********** Custom Badges ***********/
+
+.search-badge {
+  height: 28px;
+  padding-left: 6px;
+  padding-right: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  border-width: 1px;
+  border-style: solid;
+  font-family: Manrope;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #6e7787ff;
+  background: transparent;
+  border-color: #6e7787ff;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.search-badge:hover {
+  color: #565e6cff;
+  border-color: #565e6cff;
+}
+
+.search-badge:active {
+  color: #424955ff;
+  border-color: #424955ff;
+}
+
+.search-badge:disabled {
+  color: #6e7787ff;
+  border-color: #6e7787ff;
 }
