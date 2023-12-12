@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-
 export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
@@ -12,8 +11,18 @@ export default {
       },
       colors: {
         green: '#98db2e',
-      }
+      },
     },
   },
-  plugins: [],
+  plugins: [require('daisyui')],
+  daisyui: {
+      themes: ['black', 'lofi'],
+      darkTheme: 'black',
+      base: true,
+      styled: true,
+      utils: true,
+      prefix: '',
+      logs: true,
+      themeRoot: ':root',
+    },
 }

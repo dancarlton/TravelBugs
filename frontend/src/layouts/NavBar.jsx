@@ -1,19 +1,29 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   return (
-    <nav className='absolute flex top-0 w-full z-10 bg-opacity-0 shadow-md items-center justify-between'>
-      <img
-        src='/src/assets/logos/logo-main.png'
-        alt='TravelBugs Main Logo'
-        className='top-3 left-24 w-20'
-      />
-      <div className='flex space-x-4'>
-        <button>Sign In</button>
-
-        <button>Start your Journey</button>
+    <div className='navbar fixed'>
+      <div className='flex-1'>
+        <a className='btn btn-ghost'>
+          <img
+            src='/src/assets/logos/logo-main.png'
+            alt='TravelBugs Main Logo'
+            className='left-24 h-8'
+          />
+        </a>
       </div>
-    </nav>
+      <div className='flex-none font-secondary h-8'>
+        <ul className='menu menu-horizontal px-1 text-sm'>
+          <li>
+            <a>Sign in</a>
+          </li>
+          <li className='btn btn-sm rounded-3xl bg-white text-black'>
+          <Link to='/signup' className='w-full rounded-3xl'>Sign up</Link>
+          </li>
+        </ul>
+      </div>
+    </div>
   )
 }
 

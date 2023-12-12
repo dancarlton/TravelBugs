@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.earth-background {
+    background-image: url('/src/assets/images/backgrounds/earth.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Full height of the viewport */
+  }
