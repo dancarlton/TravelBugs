@@ -1,15 +1,14 @@
-import React from 'react'
 import './index.css'
-import Card from './components/Card'
 import NavBar from './layouts/NavBar'
-import HomePage from './pages/HomePage'
+import LandingPage from './pages/LandingPage'
+
+
 
 function App() {
   return (
     <main className='min-h-screen text-white'>
       <NavBar />
-      <HomePage />
-      <Card />
+      <LandingPage />
     </main>
   )
 }
