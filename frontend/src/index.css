@@ -7,12 +7,33 @@
   background-image: url('/src/assets/images/backgrounds/earth.jpg');
   background-size: cover;
   background-position: center;
-  min-height: 100vh; /* Full height of the viewport */
+  min-height: 100vh;
+  z-index: -10;
+  position: relative;
 }
 
-/* .half-overlay {
+.jeep-background {
+  background-image: url('/src/assets/images/backgrounds/jeep.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  z-index: -12;
+  position: relative;
+}
 
-} */
+.screen-overlay {
+  background-image: url('/src/assets/images/overlays/screen-overlay.png');
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -5;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: absolute;
+  opacity: 0.8;
+}
 
 /* Hide on screens larger than the 'md' breakpoint (i.e., desktops) */
 .hiddenOnDesktop {
