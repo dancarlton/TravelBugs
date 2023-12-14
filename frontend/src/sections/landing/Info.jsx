@@ -29,7 +29,7 @@ const Info = () => {
             index % 2 !== 0 ? 'lg:flex-row-reverse' : ''
           } items-center`}
         >
-          <div className='flex flex-col items-center lg:items-start space-y-6 w-full lg:w-5/12  md:px-8 lg:px-10 my-1/2 mb-8 lg:mb-0  mt-20'>
+          <div className='flex flex-col items-center lg:items-start space-y-6 w-full lg:w-5/12  md:px-8 lg:px-10 my-1/2 mb-8 lg:mb-0'>
             <h1 className='font-title text-4xl lg:text-5xl tracking-wider font-semibold'>
               {role.name}
             </h1>

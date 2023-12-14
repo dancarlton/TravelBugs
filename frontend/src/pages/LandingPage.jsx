@@ -6,7 +6,7 @@ import Footer from '../layouts/Footer'
 
 const LandingPage = () => {
   return (
-    <main className='scroll-container'>
+    <main className='snap-y snap-mandatory'>
       <Header />
       <Hero />
       <CreatorSignup />

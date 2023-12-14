@@ -8,7 +8,7 @@ const Hero = () => {
       <div className='screen-overlay relative top-0 left-0 right-0 bottom-0 '></div>
 
       {/* Text & Button */}
-      <div className=' relative items-start mt-10  md:mt-32 lg:mt-14 ml-12 '>
+      <div className=' items-start mt-10  md:mt-32 lg:mt-14 ml-12 '>
         <div className=' mb-52'>
           <h1 className='font-title2 text-4xl md:text-4xl lg:text-7xl font-extrabold tracking-wide'>
             DISCOVER NEW HORIZONS
