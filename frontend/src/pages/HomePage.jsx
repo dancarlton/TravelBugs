@@ -1,9 +1,12 @@
-import Header from '../layouts/Header'
+
+import HeaderHome from '../layouts/HeaderHome'
+import Hero from '../sections/home/Hero'
 
 const HomePage = () => {
   return (
     <main>
-      <Header type='home' />
+      <HeaderHome/>
+      <Hero />
     </main>
   )
 }

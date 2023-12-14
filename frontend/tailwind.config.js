@@ -5,9 +5,10 @@ export default {
     extend: {
       fontFamily: {
         title: ['DM Sans', 'sans-serif'],
-        title2: ['Barlow', 'sans-serif'],
-        secondary: ['"Manrope"', 'sans-serif'],
-        spacegrotesk: ['"Space Grotesk"', 'sans-serif'],
+        title2: ['Teko', 'sans-serif'],
+        secondary: ['Manrope', 'sans-serif'],
+        secondary2: ['Barlow', 'sans-serif'],
+        spacegrotesk: ['Space Grotesk', 'sans-serif'],
       },
       colors: {
         green: '#98db2e',
@@ -16,13 +17,13 @@ export default {
   },
   plugins: [require('daisyui')],
   daisyui: {
-      themes: ['black', 'lofi'],
-      darkTheme: 'black',
-      base: true,
-      styled: true,
-      utils: true,
-      prefix: '',
-      logs: true,
-      themeRoot: ':root',
-    },
+    themes: ['black', 'lofi'],
+    darkTheme: 'black',
+    base: true,
+    styled: true,
+    utils: true,
+    prefix: '',
+    logs: true,
+    themeRoot: ':root',
+  },
 }

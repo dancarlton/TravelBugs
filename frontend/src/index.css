@@ -36,33 +36,40 @@
 }
 
 @media (max-width: 800px) {
-  .earth-background, .jeep-background, .screen-overlay {
+  .earth-background,
+  .jeep-background,
+  .screen-overlay {
     min-height: 50vh;
   }
-
 }
 
 /* Custom Card sizes */
 .small-card {
-  /* position: absolute; */
-  top: 42px;
-  left: 51px;
+  position: relative;
+  object-fit: cover;
+  background-size: contain;
+  background-position: center;
+  width: 288px;
   width: 160px;
   height: 224px;
   border-radius: 8px;
 }
 
 .wide-card {
-  /* position: absolute; */
-  top: 0;
-  left: 0;
+  position: relative;
+  object-fit: cover;
+  background-size: contain;
+  background-position: center;
   width: 288px;
   height: 162px;
-  border-radius: 8px; /* Tailwind equivalent: rounded-lg */
+  border-radius: 8px;
 }
 
 .medium-card {
-  /* position: absolute; */
+  position: relative;
+  object-fit: cover;
+  background-size: contain;
+  background-position: center;
   top: 334px;
   left: 63px;
   width: 201px;
@@ -70,7 +77,10 @@
 }
 
 .large-card {
-  /* position: absolute; */
+  position: relative;
+  object-fit: cover;
+  background-size: contain;
+  background-position: center;
   top: 70px;
   left: 0;
   width: 288px;
