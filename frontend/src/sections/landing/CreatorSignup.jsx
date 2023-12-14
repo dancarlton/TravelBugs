@@ -2,12 +2,12 @@ const CreatorSignup = () => {
   return (
     <section className='jeep-background section bg-left relative flex justify-center items-center lg:h-screen'>
       {/* Higher opacity overlay with rotation (more transparent) */}
-      <div className='screen-overlay rotate-180 opacity-90 absolute top-0 left-0 right-0 h-3/4 z-10'></div>
+      <div className='screen-overlay rotate-180 opacity-90 absolute top-0 left-0 right-0 h-3/4'></div>
 
       {/* Lower opacity overlay without rotation (less transparent) */}
-      <div className='screen-overlay opacity-60 top-0 left-0 right-0 bottom-0 z-0 lg:h-1/4'></div>
+      <div className='screen-overlay opacity-60 top-0 left-0 right-0 bottom-0 lg:h-1/4'></div>
       {/* Text, Button & Arrow */}
-      <div className='text-center px-8 mt-10 z-20 relative'>
+      <div className='text-center px-8 mt-10 relative'>
         <h1 className='font-title text-3xl md:text-5xl lg:text-7xl leading-none md:leading-snug lg:leading-[88px]'>
           Become a Quest Creator
         </h1>

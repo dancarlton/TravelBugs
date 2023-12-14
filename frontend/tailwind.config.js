@@ -10,6 +10,14 @@ export default {
         secondary2: ['Barlow', 'sans-serif'],
         spacegrotesk: ['Space Grotesk', 'sans-serif'],
       },
+      fontWeight: {
+        'boldest': 900,
+      },
+      letterSpacing: {
+        tighter: '-0.05em',
+        looser: '0.1em',
+        'custom-spacing': '0.2em', // Custom letter-spacing
+      },
       colors: {
         green: '#98db2e',
       },

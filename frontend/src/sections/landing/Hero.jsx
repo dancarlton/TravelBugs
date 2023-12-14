@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import dummyData from '../data/dummyData'
-import Card from '../components/Card'
+import dummyData from '../../data/dummyData'
+import Card from '../../components/Card'
 import { Link } from 'react-router-dom'
 
 const Hero = () => {
@@ -29,10 +29,10 @@ const Hero = () => {
 
   return (
     <section className='earth-background lg:h-full section relative flex flex-col items-center'>
-      <div className='screen-overlay absolute top-0 left-0 right-0 bottom-0 z-10'></div>
+      <div className='screen-overlay absolute top-0 left-0 right-0 bottom-0'></div>
 
       {/* Text & Button */}
-      <div className='z-20 relative text-center mt-20 md:mt-32 lg:mt-40'>
+      <div className=' relative text-center mt-20 md:mt-32 lg:mt-40'>
         <h1 className='font-title text-center text-2xl md:text-4xl lg:text-5xl font-bold'>
           Explore Locally. Thrive Globally:
         </h1>
@@ -43,13 +43,16 @@ const Hero = () => {
           Your Adventure, Your Rewards: Uncover Local Treasures, Achieve
           Milestones, and Boost Community Businesses with Every Completed Quest.
         </p>
-        <Link to='/home' className='btn btn-success bg-green text-black font-light rounded-full mt-5'>
+        <Link
+          to='/home'
+          className='btn btn-success bg-green text-black font-light rounded-full mt-5'
+        >
           Discover Quests
         </Link>
       </div>
 
       {/* Card Container */}
-      <div className='w-3/4 sm:w-11/12 md:w-5/6 lg:w-9/12 mt-10 bg-neutral-800 rounded-lg overflow-visible z-20'>
+      <div className='w-3/4 sm:w-11/12 md:w-5/6 lg:w-9/12 mt-10 bg-neutral-800 rounded-lg overflow-visible '>
         <div className='flex flex-wrap justify-center py-[30px] gap-x-4 gap-y-4'>
           {dummyData.slice(0, numberOfCards).map(card => (
             <Card

@@ -45,11 +45,11 @@ const Info = () => {
               </button>
             </div>
           </div>
-          <button className='w-full lg:w-7/12 px-4 md:px-10 lg:px-6 z-20'>
+          <button className='w-full lg:w-7/12 px-4 md:px-10 lg:px-6 '>
             <img
               src={`/sections/${role.name.toLowerCase()}.jpg`}
               alt={`Image of a ${role.name}`}
-              className='w-full h-80 lg:h-96 rounded-md object-cover z-20'
+              className='w-full h-80 lg:h-96 rounded-md object-cover'
             />
           </button>
         </div>

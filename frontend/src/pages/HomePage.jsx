@@ -1,11 +1,10 @@
-
-import HeaderHome from '../layouts/HeaderHome'
+import Header from '../layouts/Header'
 import Hero from '../sections/home/Hero'
 
 const HomePage = () => {
   return (
     <main>
-      <HeaderHome/>
+      <Header/>
       <Hero />
     </main>
   )
