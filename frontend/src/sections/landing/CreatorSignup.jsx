@@ -1,13 +1,14 @@
 const CreatorSignup = () => {
   return (
-    <section className='jeep-background section bg-left relative flex justify-center items-center lg:h-screen'>
-      {/* Higher opacity overlay with rotation (more transparent) */}
-      <div className='screen-overlay rotate-180 opacity-90 absolute top-0 left-0 right-0 h-3/4'></div>
+    <section className='section bg-left relative flex justify-center items-center lg:h-screen z-10'>
+      <div className='jeep-background z-[1]'></div>
 
-      {/* Lower opacity overlay without rotation (less transparent) */}
+      {/* Two Overlays */}
+      <div className='screen-overlay rotate-180 opacity-90 absolute top-0 left-0 right-0 h-3/4'></div>
       <div className='screen-overlay opacity-60 top-0 left-0 right-0 bottom-0 lg:h-1/4'></div>
+
       {/* Text, Button & Arrow */}
-      <div className='text-center px-8 mt-10 relative'>
+      <div className='text-center px-8 mt-10 relative z-10'>
         <h1 className='font-title text-3xl md:text-5xl lg:text-7xl leading-none md:leading-snug lg:leading-[88px]'>
           Become a Quest Creator
         </h1>
@@ -20,7 +21,7 @@ const CreatorSignup = () => {
             <img
               src='/public/icons/right-arrow.png'
               alt='Right Arrow'
-              className='ml-2 h-4 w-4'
+              className=' h-4 w-4'
             />
           </button>
           <div className='mt-14 md:mt-16 lg:mt-20 h-14 w-14 rounded-full border-2 border-white flex items-center justify-center'>

@@ -6,7 +6,7 @@ import Footer from '../layouts/Footer'
 
 const LandingPage = () => {
   return (
-    <main>
+    <main className='scroll-container'>
       <Header />
       <Hero />
       <CreatorSignup />
