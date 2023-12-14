@@ -28,8 +28,8 @@ const Hero = () => {
   }, [])
 
   return (
-    <section className='earth-background lg:h-full relative flex flex-col items-center snap-start'>
-      <div className='screen-overlay absolute top-0 left-0 right-0 bottom-0'></div>
+    <section className='earth-background lg:h-full relative flex flex-col items-center'>
+      <div className='screen-overlay opacity-90 absolute top-0 left-0 right-0 mt-[15%] h-3/4'></div>
 
       {/* Text & Button */}
       <div className=' relative text-center mt-20 md:mt-32 lg:mt-40 z-10'>
