@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import dummyData from '../data/dummyData'
 import Card from '../components/Card'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   const [numberOfCards, setNumberOfCards] = useState(10)
@@ -42,9 +43,9 @@ const Hero = () => {
           Your Adventure, Your Rewards: Uncover Local Treasures, Achieve
           Milestones, and Boost Community Businesses with Every Completed Quest.
         </p>
-        <button className='btn btn-success bg-green text-black font-light rounded-full mt-5'>
+        <Link to='/home' className='btn btn-success bg-green text-black font-light rounded-full mt-5'>
           Discover Quests
-        </button>
+        </Link>
       </div>
 
       {/* Card Container */}
