@@ -8,7 +8,7 @@ const CreatorSignup = () => {
       <div className='screen-overlay opacity-60 top-0 left-0 right-0 bottom-0 lg:h-1/4'></div>
 
       {/* Text, Button & Arrow */}
-      <div className='text-center px-8 mt-10 relative z-10'>
+      <div className='text-center px-8 mt-28 relative z-10'>
         <h1 className='font-title text-3xl md:text-5xl lg:text-7xl leading-none md:leading-snug lg:leading-[88px]'>
           Become a Quest Creator
         </h1>
