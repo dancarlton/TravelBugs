@@ -8,7 +8,7 @@
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  z-index: 0;
+  z-index: 1;
   /* position: relative; */
 }
 
@@ -17,7 +17,7 @@
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  z-index: 0;
+  z-index: 1;
   position: relative;
 }
 
@@ -26,7 +26,7 @@
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  z-index: 0;
+  z-index: 1;
   position: relative;
 }
 
@@ -36,7 +36,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 2;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -101,14 +101,14 @@
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   height: 100vh;
-  z-index: 0;
+  z-index: 1;
 }
 
 /* Generic Section */
 .section {
   height: 100vh;
   scroll-snap-align: start;
-  z-index: 0;
+  z-index: 1;
 }
 
 /* Hide on screens larger than the 'md' breakpoint (i.e., desktops) */
@@ -131,5 +131,5 @@
   font-weight: 700;
   line-height: 110px;
   color: #9095a080;
-  /* z-index: 0;  */
+  /* z-index: 1;  */
 }

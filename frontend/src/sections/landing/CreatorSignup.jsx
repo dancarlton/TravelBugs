@@ -1,10 +1,10 @@
 const CreatorSignup = () => {
   return (
     <section className='section bg-left relative flex justify-center items-center lg:h-screen z-20'>
-      <div className='jeep-background z-[3]'></div>
+      <div className='jeep-background'></div>
 
       {/* Two Overlays */}
-      <div className='screen-overlay rotate-180 opacity-90 absolute top-0 left-0 right-0 h-3/4'></div>
+      <div className='screen-overlay rotate-180 opacity-90 top-0 left-0 right-0 h-3/4'></div>
       <div className='screen-overlay opacity-60 top-0 left-0 right-0 bottom-0 lg:h-1/4'></div>
 
       {/* Text, Button & Arrow */}
