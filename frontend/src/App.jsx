@@ -1,14 +1,17 @@
 import './index.css'
-import NavBar from './layouts/NavBar'
+
 import LandingPage from './pages/LandingPage'
+import Header from './layouts/Header'
+import Footer from './layouts/Footer'
 
 
 
 function App() {
   return (
     <main className='min-h-screen text-white'>
-      <NavBar />
+      <Header />
       <LandingPage />
+      <Footer />
     </main>
   )
 }

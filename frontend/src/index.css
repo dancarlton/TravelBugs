@@ -4,7 +4,7 @@
 
 /* Backgrounds */
 .earth-background {
-  background-image: url('/src/assets/images/backgrounds/earth.jpg');
+  background-image: url('/public/backgrounds/earth.jpg');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -13,16 +13,16 @@
 }
 
 .jeep-background {
-  background-image: url('/src/assets/images/backgrounds/jeep.jpg');
+  background-image: url('/public/backgrounds/jeep.jpg');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  z-index: -12;
+  z-index: -10;
   position: relative;
 }
 
 .screen-overlay {
-  background-image: url('/src/assets/images/overlays/screen-overlay.png');
+  background-image: url('/public/overlays/screen-overlay.png');
   top: 0;
   left: 0;
   right: 0;
@@ -32,17 +32,14 @@
   background-position: center;
   min-height: 100vh;
   position: absolute;
-  opacity: 0.8;
+  /* set opacity customly in tailwind with 'opacity-90' */
 }
 
-/* Hide on screens larger than the 'md' breakpoint (i.e., desktops) */
-.hiddenOnDesktop {
-  @apply block md:hidden;
-}
+@media (max-width: 800px) {
+  .earth-background, .jeep-background, .screen-overlay {
+    min-height: 50vh;
+  }
 
-/* Hide on screens smaller than the 'md' breakpoint (i.e., mobile devices) */
-.hiddenOnMobile {
-  @apply hidden md:block;
 }
 
 /* Custom Card sizes */
@@ -79,4 +76,25 @@
   width: 288px;
   height: 390px;
   border-radius: 8px; /* Tailwind equivalent: rounded-lg */
+}
+
+/* Scroll Features on Swiping  */
+/*.scroll-container {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+
+.section {
+  height: 100vh;
+  scroll-snap-align: start;
+
+/* Hide on screens larger than the 'md' breakpoint (i.e., desktops) */
+.hiddenOnDesktop {
+  @apply block md:hidden;
+}
+
+/* Hide on screens smaller than the 'md' breakpoint (i.e., mobile devices) */
+.hiddenOnMobile {
+  @apply hidden md:block;
 }

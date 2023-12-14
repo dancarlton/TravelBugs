@@ -1,30 +1,29 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
-const NavBar = () => {
+const Header = () => {
   return (
-    <div className='navbar fixed'>
+    <header className='navbar absolute'>
       <div className='flex-1'>
         <a className='btn btn-ghost'>
           <img
-            src='/src/assets/logos/logo-main.png'
+            src='/public/icons/logos/logo-main.png'
             alt='TravelBugs Main Logo'
-            className='left-24 h-8'
+            className='left-24 max-sm:h-8 h-full'
           />
         </a>
       </div>
-      <div className='flex-none font-secondary h-8'>
+      <nav className='flex-none font-secondary h-8'>
         <ul className='menu menu-horizontal px-1 text-sm'>
           <li>
             <a>Sign in</a>
           </li>
-          <li className='btn btn-sm rounded-3xl bg-white text-black'>
+          <li className='btn btn-sm xs:btn-xs rounded-3xl bg-white text-black'>
           <Link to='/signup' className='w-full rounded-3xl'>Sign up</Link>
           </li>
         </ul>
-      </div>
-    </div>
+      </nav>
+    </header>
   )
 }
 
-export default NavBar
+export default Header
