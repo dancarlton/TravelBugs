@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const CreatorSignup = () => {
   return (
     <section className='jeep-background lg:h-full relative flex flex-col items-center'>
@@ -15,14 +17,14 @@ const CreatorSignup = () => {
           Income opportunities coming soon...
         </h3>
         <div className='flex flex-col items-center justify-center'>
-          <button className='btn btn-success bg-green text-black font-light rounded-full mt-5 flex items-center justify-center'>
+          <Link to='/signup' className='btn btn-success bg-green text-black font-light rounded-full mt-5 flex items-center justify-center'>
             Sign Up
             <img
               src='/icons/right-arrow.png'
               alt='Right Arrow'
               className=' h-4 w-4'
             />
-          </button>
+          </Link>
           {/* <div className='mt-14 md:mt-16 lg:mt-20 h-14 w-14 rounded-full border-2 border-white flex items-center justify-center'>
             <a className="scroll-smooth" href="#info-section">
               <img

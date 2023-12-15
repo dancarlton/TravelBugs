@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const Badge = ({ badgeData, customStyle }) => {
   return (
-    <div>
+    <div className="badge-container">
       {badgeData.map(item => (
         <Link to={`${item.title}`} key={item.id} className={`${customStyle}`}>
           {item.title}
@@ -12,6 +12,7 @@ const Badge = ({ badgeData, customStyle }) => {
     </div>
   )
 }
+
 
 Badge.propTypes = {
   badgeData: PropTypes.arrayOf(

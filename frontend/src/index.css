@@ -30,6 +30,17 @@
   position: relative;
 }
 
+.map-background {
+  background-image: url('/backgrounds/map.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  z-index: 1;
+  position: relative;
+}
+
+/*********** Overlays ***********/
+
 .screen-overlay {
   background-image: url('/overlays/screen-overlay.png');
   top: 0;
@@ -42,6 +53,19 @@
   min-height: 100vh;
   position: absolute;
   /* opacity: 0.9; */
+}
+
+.full-overlay {
+  background: rgba(0, 0, 0, 0.801);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: absolute;
 }
 
 /********** Custom Cards ***********/
@@ -104,6 +128,12 @@
 }
 
 /********** Custom Badges ***********/
+.badge-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  gap: 5px;
+}
 
 .search-badge {
   height: 28px;

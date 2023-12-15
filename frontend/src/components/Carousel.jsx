@@ -2,12 +2,12 @@ import { Link } from "react-router-dom"
 import dummyData from "../data/dummyData"
 
 
-const Carousel = () => {
+const Carousel = ({ questTitle }) => {
   return (
-    <div>
+    <div className="z-20">
       <h3 className='font-title text-lg font-bold mb-2 relative'>
        {/* Needs to be pulled form database */}
-        Trending Now
+        {questTitle}
       </h3>
       <div className='carousel w-screen'>
         {dummyData.slice(0, 6).map(card => (
