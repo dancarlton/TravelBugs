@@ -2,39 +2,70 @@ import { Link } from 'react-router-dom'
 
 const MobileSignup = () => {
   return (
-    <div className='cave-background flex flex-col items-center justify-center'>
-      <div className='full-overlay opacity-60'></div>
-      <div className='z-10 text-center w-full px-4 py-6'>
-        <div className='flex flex-col gap-y-6 '>
+    <main className='cave-background flex flex-col items-center justify-center h-screen py-12'>
+      <div className='full-overlay opacity-90'></div>
+
+      {/* Logo on top */}
+      <div className='z-10 text-center w-full absolute top-0 left-0 right-0'>
+        <div className='flex flex-col items-center justify-center mt-28'>
+          {' '}
+          {/* Increased padding here */}
           <Link to='/' className='btn btn-ghost'>
             <img
               src='/icons/logos/logo-main.png'
               alt='TravelBugs Main Logo'
-              className='h-14'
+              className='h-20'
             />
           </Link>
-          <h1 className='font-title text-white text-xl '>Create an Account</h1>
+          <h1 className='font-title text-white text-2xl mt-12'>
+            Create an Account
+          </h1>
         </div>
-        {/* /************************************
-                        Auths
-         ************************************/}
+      </div>
 
+      {/* Buttons in the middle */}
+      <div className='z-10 w-full px-4 py-6 absolute'>
         <div className='flex flex-col gap-y-4'>
-          <button className='rounded-xl w-full bg-green h-14 text-black tracking-wide'>
+          <button className='rounded-xl w-full bg-green h-14 text-black tracking-wide text-xl font-light'>
             Continue with Email
           </button>
-          <button className='rounded-xl w-full bg-white h-14 text-black tracking-wide'>
+          <button className='rounded-xl w-full border-white border-2 bg-transparent h-14 text-white tracking-wide text-xl font-light'>
             Continue with Google
           </button>
-          <button className='rounded-xl w-full bg-white h-14 text-black tracking-wide'>
+          <button className='rounded-xl w-full border-white border-2 bg-transparent h-14 text-white tracking-wide text-xl font-light'>
+            <img src="" alt="" />
             Continue with Apple
           </button>
-          <button className='rounded-xl w-full bg-white h-14 text-black tracking-wide'>
+          <button className='rounded-xl w-full border-white border-2 bg-transparent h-14 text-white tracking-wide text-xl font-light'>
             Continue with Facebook
           </button>
         </div>
       </div>
-    </div>
+
+      {/* Terms at the bottom */}
+      <h5 className='text-sm text-center text-white px-8 absolute bottom-40 z-10'>
+        {' '}
+        {/* Decreased bottom margin here */}
+        By continuing, you agree to the{' '}
+        <span className='font-bold'>
+          <a href=''>Privacy Policy</a>
+        </span>{' '}
+        and{' '}
+        <span className='font-bold'>
+          <a href=''>Terms & Conditions</a>
+        </span>
+      </h5>
+
+      {/* Login Link */}
+      <div className='text-center mb-10 text-lg absolute bottom-0 right-0 left-0 z-10'>
+        <Link to='/login' className='text-white'>
+          Have an account?{' '}
+          <span className='text-green underline font-bold'>
+            <a href=''>Log In</a>
+          </span>
+        </Link>
+      </div>
+    </main>
   )
 }
 

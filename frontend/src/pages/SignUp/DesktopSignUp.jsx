@@ -17,7 +17,6 @@ const DesktopSignUp = () => {
         </div>
         <div className='full-overlay opacity-90 inset-0 lg:h-full'></div>
         {/* Contents */}
-        
         <div className='flex flex-col items-center justify-center w-full h-full z-10 max-sm:hidden'>
           <div className='z-10 text-center w-full px-4 py-6'>
             <h1 className='font-title text-4xl font-boldest'>
@@ -72,14 +71,30 @@ const DesktopSignUp = () => {
                     </span>
                     .
                   </h5>
-                  <button className='rounded-xl w-full bg-white h-8 text-black tracking-wide'>
-                    Google
+                  <button className='flex items-center justify-center rounded-xl w-full bg-white h-8 text-black tracking-wide'>
+                    <img
+                      src='/icons/socials/google.png'
+                      alt='Apple'
+                      className='h-5 w-5 mr-2'
+                    />
+                    Continue with Google
                   </button>
-                  <button className='rounded-xl w-full bg-white h-8 text-black tracking-wide'>
-                    Apple
+                  <button className='flex items-center justify-center rounded-xl w-full bg-white h-8 text-black tracking-wide'>
+                    <img
+                      src='/icons/socials/apple.png'
+                      alt='Apple'
+                      className='h-5 w-5 mr-2'
+                    />
+                    Continue with Apple
                   </button>
-                  <button className='rounded-xl w-full bg-white h-8 text-black tracking-wide'>
-                    Facebook
+
+                  <button className='flex items-center justify-center rounded-xl w-full bg-white h-8 text-black tracking-wide'>
+                    <img
+                      src='/icons/socials/facebook.png'
+                      alt='Apple'
+                      className='h-5 w-5 mr-2'
+                    />
+                    Continue with Facebook
                   </button>
                 </div>
               </div>
