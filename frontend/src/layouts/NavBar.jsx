@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 
-const Header = () => {
+const NavBar = () => {
   return (
-    <header className='navbar absolute w-full flex justify-between items-center z-50'>
+    <nav className='navbar absolute w-full flex justify-between items-center z-50'>
       <div className='navbar-start'>
         <div className='dropdown'>
           <div tabIndex={0} role='button' className='btn btn-ghost btn-circle'>
@@ -83,8 +83,8 @@ const Header = () => {
           </div>
         </button>
       </div>
-    </header>
+    </nav>
   )
 }
 
-export default Header
+export default NavBar

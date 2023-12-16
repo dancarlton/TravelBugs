@@ -1,4 +1,4 @@
-import Header from '../layouts/Header'
+import Header from '../layouts/NavBar'
 import Hero from '../sections/landing/Hero'
 import CreatorSignup from '../sections/landing/CreatorSignup'
 import Info from '../sections/landing/Info'

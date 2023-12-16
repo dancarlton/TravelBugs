@@ -1,10 +1,10 @@
-import Header from '../layouts/Header'
+import Header from '../layouts/NavBar'
 import Hero from '../sections/home/Hero'
 
 const HomePage = () => {
   return (
     <main className='overflow-x-hidden '>
-      <Header/>
+      <Header />
       <Hero />
     </main>
   )

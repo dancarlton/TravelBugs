@@ -5,8 +5,8 @@ const CreatorSignup = () => {
     <section className='jeep-background lg:h-full relative flex flex-col items-center'>
 
       {/* Two Overlays */}
-      <div className='screen-overlay rotate-180 opacity-90 top-0 left-0 right-0 h-3/4'></div>
-      <div className='screen-overlay opacity-50 top-0 left-0 right-0 bottom-0 '></div>
+      <div className='half-overlay rotate-180 opacity-90 top-0 left-0 right-0 h-3/4'></div>
+      <div className='half-overlay opacity-70 top-0 left-0 right-0 bottom-0 '></div>
 
       {/* Text, Button & Arrow */}
       <div className='text-center py-28 px-8 mt-28 relative z-10'>

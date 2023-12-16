@@ -39,10 +39,19 @@
   position: relative;
 }
 
+.cave-background {
+  background-image: url('/backgrounds/cave.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  z-index: 1;
+  position: relative;
+}
+
 /*********** Overlays ***********/
 
-.screen-overlay {
-  background-image: url('/overlays/screen-overlay.png');
+.half-overlay {
+  background-image: url('/overlays/half-overlay.png');
   top: 0;
   left: 0;
   right: 0;

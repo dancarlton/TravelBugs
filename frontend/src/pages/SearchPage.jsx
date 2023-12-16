@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Badge from '../components/Badge'
-import Header from '../layouts/Header'
+import Header from '../layouts/NavBar'
 import questTypes from '/src/data/questTypes.js'
 import Carousel from '../components/Carousel'
 import Footer from '../layouts/Footer'
