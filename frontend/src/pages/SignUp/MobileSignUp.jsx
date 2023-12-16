@@ -26,17 +26,36 @@ const MobileSignup = () => {
       {/* Buttons in the middle */}
       <div className='z-10 w-full px-4 py-6 absolute'>
         <div className='flex flex-col gap-y-4'>
-          <button className='rounded-xl w-full bg-green h-14 text-black tracking-wide text-xl font-light'>
+          <button className='flex items-center justify-center rounded-xl w-full bg-green h-14 text-black tracking-wide text-xl font-light'>
+            <img
+              src='/icons/socials/mail.png'
+              alt='Apple'
+              className='h-5 w-5 mr-2 '
+            />
             Continue with Email
           </button>
-          <button className='rounded-xl w-full border-white border-2 bg-transparent h-14 text-white tracking-wide text-xl font-light'>
+          <button className='flex items-center justify-center rounded-xl w-full border-white border-2 bg-transparent h-14 text-white tracking-wide text-xl font-light'>
+            <img
+              src='/icons/socials/google.png'
+              alt='Apple'
+              className='h-5 w-5 mr-2 filter invert'
+            />
             Continue with Google
           </button>
-          <button className='rounded-xl w-full border-white border-2 bg-transparent h-14 text-white tracking-wide text-xl font-light'>
-            <img src="" alt="" />
+          <button className='flex items-center justify-center rounded-xl w-full border-white border-2 bg-transparent h-14 text-white tracking-wide text-xl font-light'>
+            <img
+              src='/icons/socials/apple.png'
+              alt='Apple'
+              className='h-5 w-5 mr-2 filter invert'
+            />
             Continue with Apple
           </button>
-          <button className='rounded-xl w-full border-white border-2 bg-transparent h-14 text-white tracking-wide text-xl font-light'>
+          <button className='flex items-center justify-center rounded-xl w-full border-white border-2 bg-transparent h-14 text-white tracking-wide text-xl font-light'>
+            <img
+              src='/icons/socials/facebook.png'
+              alt='Apple'
+              className='h-5 w-5 mr-2 filter invert'
+            />
             Continue with Facebook
           </button>
         </div>
