@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import dummyData from '../../data/dummyData'
-import Card from '../../components/Card'
+import Cards from '../../components/Cards'
 import { Link } from 'react-router-dom'
+import questData from '../../data/questData'
 
 const Hero = () => {
   const [numberOfCards, setNumberOfCards] = useState(10)
@@ -13,9 +13,9 @@ const Hero = () => {
       } else if (window.innerWidth >= 1000) {
         setNumberOfCards(8) // 8 cards for smaller screens
       } else if (window.innerWidth >= 767) {
-        setNumberOfCards(9) // 9 cards for medium screens
+        setNumberOfCards(8) // 9 cards for medium screens
       } else if (window.innerWidth >= 300) {
-        setNumberOfCards(2)
+        setNumberOfCards(4)
       } else {
         setNumberOfCards(6)
       }
@@ -36,10 +36,10 @@ const Hero = () => {
         <h1 className='font-title text-center text-2xl md:text-4xl lg:text-5xl font-bold'>
           Explore Locally. Thrive Globally:
         </h1>
-        <h2 className='font-title text-xl md:text-3xl lg:text-4xl font-medium text-center'>
+        <h2 className='font-title text-xl px-2 md:px-4 md:text-3xl lg:text-4xl font-medium text-center'>
           Embark on Adventures, Earn Rewards, Support Local Business.
         </h2>
-        <p className='font-secondary text-xs font-extralight md:text-sm lg:text-base text-center mx-auto my-5 w-5/6 lg:w-2/3'>
+        <p className='font-secondary text-xs font-extralight md:text-sm lg:text-base text-center mx-auto px-1 my-5 w-5/6 lg:w-2/3'>
           Your Adventure, Your Rewards: Uncover Local Treasures, Achieve
           Milestones, and Boost Community Businesses with Every Completed Quest.
         </p>
@@ -52,14 +52,16 @@ const Hero = () => {
       </div>
 
       {/* Card Container */}
-      <div className='w-3/4 sm:w-11/12 md:w-5/6 lg:w-9/12 mt-10 bg-neutral-800 rounded-lg overflow-visible z-40'>
-        <div className='flex flex-wrap justify-center py-[30px] gap-x-4 gap-y-4 z-50'>
-          {dummyData.slice(0, numberOfCards).map(card => (
+      <div className='w-3/4 sm:w-11/12 md:w-5/6 lg:w-9/12 2xl:w-5/12 mt-10 bg-neutral-800 rounded-lg overflow-visible z-40'>
+        <div className='flex flex-wrap justify-center py-[30px] gap-x-2 gap-y-2 md:gap-x-4 md:gap-y-4 z-50'>
+          {questData.slice(0, numberOfCards).map(card => (
             <Link to={`/${card.title}`} key={card.id}>
-              <Card
-                title={card.title}
+              <Cards
+                key={card.id}
+                className='small-card'
                 imageUrl={card.imageUrl}
-                className='small-card z-20'
+                title={card.title}
+                creatorUserName={card.creatorUserName}
               />
             </Link>
           ))}

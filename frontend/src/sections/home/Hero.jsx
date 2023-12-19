@@ -1,7 +1,7 @@
 import dummyData from '/src/data/dummyData.js'
-import Card from '/src/components/Card.jsx'
+import Cards from '/src/components/Cards.jsx'
 import { Link } from 'react-router-dom'
-import Carousel from '../../components/Carousel'
+import Carousels from '../../components/Carousels'
 
 const Hero = () => {
   return (
@@ -38,8 +38,9 @@ const Hero = () => {
         {/* Carousel */}
         <div className='z-50 mt-10 md:mt-0'>
           {/* Trending Now */}
+          <h3 className='font-title text-lg font-bold mb-2'>Trending Now</h3>
 
-          <Carousel />
+          <Carousels />
 
           {/* Hiking */}
           <h3 className='font-title text-lg font-bold mb-2'>Hiking</h3>
@@ -47,9 +48,10 @@ const Hero = () => {
             <div className='carousel-item'>
               {dummyData.slice(0, 6).map(card => (
                 <Link to={`/${card.title}`} key={card.id}>
-                  <Card
+                  <Cards
                     title={card.title}
                     imageUrl={card.imageUrl}
+                    creatorUserName={card.creatorUserName}
                     className='wide-card mr-3'
                   />
                 </Link>
@@ -62,9 +64,10 @@ const Hero = () => {
             <div className='carousel-item'>
               {dummyData.slice(0, 6).map(card => (
                 <Link to={`/${card.title}`} key={card.id}>
-                  <Card
+                  <Cards
                     title={card.title}
                     imageUrl={card.imageUrl}
+                    creatorUserName={card.creatorUserName}
                     className='wide-card mr-3'
                   />
                 </Link>
@@ -77,9 +80,10 @@ const Hero = () => {
             <div className='carousel-item'>
               {dummyData.slice(0, 6).map(card => (
                 <Link to={`/${card.title}`} key={card.id}>
-                  <Card
+                  <Cards
                     title={card.title}
                     imageUrl={card.imageUrl}
+                    creatorUserName={card.creatorUserName}
                     className='wide-card mr-3'
                   />
                 </Link>
@@ -92,9 +96,10 @@ const Hero = () => {
             <div className='carousel-item'>
               {dummyData.slice(0, 6).map(card => (
                 <Link to={`/${card.title}`} key={card.id}>
-                  <Card
+                  <Cards
                     title={card.title}
                     imageUrl={card.imageUrl}
+                    creatorUserName={card.creatorUserName}
                     className='wide-card mr-3'
                   />
                 </Link>
@@ -112,9 +117,10 @@ const Hero = () => {
                   {/* Number Overlay */}
                   <p className='text-top-quest'>{index + 1}</p>
                   <Link>
-                    <Card
+                    <Cards
                       title={card.title}
                       imageUrl={card.imageUrl}
+                      creatorUserName={card.creatorUserName}
                       className='large-card mr-3'
                     />
                   </Link>

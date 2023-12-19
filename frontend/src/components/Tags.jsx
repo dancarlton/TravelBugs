@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
-const Badge = ({ badgeData, customStyle }) => {
+const Tag = ({ tagData, customStyle }) => {
   return (
-    <div className="badge-container">
-      {badgeData.map(item => (
+    <div className="tag-container">
+      {tagData.map(item => (
         <Link to={`${item.title}`} key={item.id} className={`${customStyle}`}>
           {item.title}
         </Link>
@@ -14,8 +14,8 @@ const Badge = ({ badgeData, customStyle }) => {
 }
 
 
-Badge.propTypes = {
-  badgeData: PropTypes.arrayOf(
+Tag.propTypes = {
+  tagData: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired,
@@ -24,4 +24,4 @@ Badge.propTypes = {
   customStyle: PropTypes.string.isRequired,
 }
 
-export default Badge
+export default Tag

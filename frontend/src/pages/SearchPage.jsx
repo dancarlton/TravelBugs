@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import Badge from '../components/Badge'
+import Badge from '../components/Tags'
 import Header from '../layouts/NavBar'
 import questTypes from '/src/data/questTypes.js'
-import Carousel from '../components/Carousel'
+import Carousel from '../components/Carousels'
 import Footer from '../layouts/Footer'
 
 const SearchPage = () => {

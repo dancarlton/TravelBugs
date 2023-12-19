@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import dummyData from "../data/dummyData"
 
 
-const Carousel = ({ questTitle }) => {
+const Carousels = ({ questTitle }) => {
   return (
     <div className="z-20">
       <h3 className='font-title text-lg font-bold mb-2 relative'>
@@ -29,4 +29,4 @@ const Carousel = ({ questTitle }) => {
   )
 }
 
-export default Carousel
+export default Carousels
