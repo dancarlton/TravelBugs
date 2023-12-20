@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import PropTypes from 'prop-types'
 import dummyData from "../data/dummyData"
 
 
@@ -11,7 +12,7 @@ const Carousels = ({ questTitle }) => {
       </h3>
       <div className='carousel w-screen'>
         {dummyData.slice(0, 6).map(card => (
-          <div key={card.id} className='carousel-item w-full mr-0 mb-8'>
+          <div key={card.id} className='carousel-item w-70 mr-0 mb-8'>
             <Link to={`/${card.title}`} key={card.id}>
               <div>
                 <img
@@ -27,6 +28,14 @@ const Carousels = ({ questTitle }) => {
       </div>
     </div>
   )
+}
+
+Carousels.propTypes = {
+  questTitle: PropTypes.string,
+  creatorUserName: PropTypes.string,
+  className: PropTypes.string,
+  imageUrl: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 }
 
 export default Carousels

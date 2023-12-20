@@ -16,11 +16,11 @@ const Footer = () => {
             className='filter: invert brightness(90%);'
           >
             <img
-              src='/icons/socials/discord.png'
+              src='/socials/discord.png'
               alt='Discord Logo'
               width='27'
               height='27'
-              className='fill-current text-gray-240'
+              className='fill-current'
             />
           </a>
 
@@ -30,7 +30,7 @@ const Footer = () => {
             className='filter: invert brightness(90%);'
           >
             <img
-              src='/icons/socials/facebook.png'
+              src='/socials/facebook.png'
               alt='Facebook'
               width='24'
               height='24'
@@ -43,7 +43,7 @@ const Footer = () => {
             className='filter: invert brightness(90%);'
           >
             <img
-              src='/icons/socials/instagram.png'
+              src='/socials/instagram.png'
               alt='Instagram'
               width='24'
               height='24'
@@ -56,7 +56,7 @@ const Footer = () => {
             className='filter: invert brightness(90%);'
           >
             <img
-              src='/icons/socials/twitter.png'
+              src='/socials/twitter.png'
               alt='Twitter'
               width='24'
               height='24'
@@ -69,7 +69,7 @@ const Footer = () => {
             className='filter: invert brightness(90%);'
           >
             <img
-              src='/icons/socials/tik-tok.png'
+              src='/socials/tik-tok.png'
               alt='Tik Tok'
               width='24'
               height='24'
@@ -82,7 +82,7 @@ const Footer = () => {
             className='filter: invert brightness(90%);'
           >
             <img
-              src='/icons/socials/telegram.png'
+              src='/socials/telegram.png'
               alt='Telegram'
               width='24'
               height='24'
@@ -95,7 +95,7 @@ const Footer = () => {
             className='filter: invert brightness(90%);'
           >
             <img
-              src='/icons/socials/github.png'
+              src='/socials/github.png'
               alt='GitHub'
               width='24'
               height='24'

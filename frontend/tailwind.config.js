@@ -8,7 +8,6 @@ export default {
         title2: ['Teko', 'sans-serif'],
         secondary: ['Manrope', 'sans-serif'],
         secondary2: ['Barlow', 'sans-serif'],
-        spacegrotesk: ['Space Grotesk', 'sans-serif'],
       },
       fontWeight: {
         'boldest': 1000,

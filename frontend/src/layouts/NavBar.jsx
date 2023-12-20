@@ -40,7 +40,7 @@ const NavBar = () => {
       <div className='navbar-center'>
         <Link to='/' className='btn btn-ghost'>
           <img
-            src='/icons/logos/logo-main.png'
+            src='/logos/logo-main.png'
             alt='TravelBugs Main Logo'
             className='h-8'
           />
