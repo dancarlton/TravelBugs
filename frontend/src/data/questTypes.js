@@ -1,13 +1,10 @@
-// Imports go here
-
-// Quest Types
 const questTypes = [
   {
     id: 1,
-    title: 'Popular Quests',
+    title: 'Trending Now',
     description: 'Trending and most-loved quests by our community',
     icon: '',
-    tags: ['Trending', 'Community'],
+    tags: ['Trending', 'Popular'],
     seasons: 'All year',
   },
   {
@@ -15,39 +12,39 @@ const questTypes = [
     title: 'Hiking',
     description: 'Explore scenic trails and enjoy the beauty of nature',
     icon: '',
-    tags: ['Nature', 'Adventure', 'Outdoor'],
+    tags: ['Hiking'],
     seasons: 'All year',
   },
   {
     id: 3,
-    title: 'Sightseeing',
-    description: 'Discover stunning views and landmarks',
+    title: 'Date Night',
+    description: 'Romantic quests perfect for couples',
     icon: '',
-    tags: ['Views', 'Landmarks', 'Exploration'],
+    tags: ['Date Night'],
     seasons: 'All year',
   },
   {
     id: 4,
-    title: 'Historic',
-    description: 'Journey through history at significant sites',
+    title: '21+',
+    description: 'Adults-only quests for nightlife and more',
     icon: '',
-    tags: ['History', 'Culture', 'Education'],
-    seasons: 'All year',
-  },
-  {
-    id: 5,
-    title: 'Date Night',
-    description: 'Romantic quests perfect for couples',
-    icon: '',
-    tags: ['Romance', 'Couples', 'Nightlife'],
+    tags: ['21+', 'Adults', 'Nightlife', 'Bars'],
     seasons: 'All year',
   },
   {
     id: 6,
-    title: 'Culinary',
-    description: 'Delight in gastronomic adventures',
+    title: 'Historic',
+    description: 'Journey through history at significant sites',
     icon: '',
-    tags: ['Food', 'Gourmet', 'Tasting'],
+    tags: ['Historic'],
+    seasons: 'All year',
+  },
+  {
+    id: 5,
+    title: 'Sightseeing',
+    description: 'Discover stunning views and landmarks',
+    icon: '',
+    tags: ['Sightseeing'],
     seasons: 'All year',
   },
   {
@@ -71,15 +68,15 @@ const questTypes = [
     title: 'Arts & Culture',
     description: 'Immerse in artistic and cultural experiences',
     icon: '',
-    tags: ['Arts', 'Culture', 'Exhibitions'],
+    tags: ['Arts & Culture', 'Arts', 'Culture'],
     seasons: 'All year',
   },
   {
     id: 10,
-    title: '21+',
-    description: 'Adults-only quests for nightlife and more',
+    title: 'Culinary',
+    description: 'Delight in gastronomic adventures',
     icon: '',
-    tags: ['Adults', 'Nightlife', 'Bars'],
+    tags: ['Culinary', 'Food'],
     seasons: 'All year',
   },
   {
@@ -87,7 +84,7 @@ const questTypes = [
     title: 'Scavenger Hunt',
     description: 'Engaging hunts with clues and puzzles',
     icon: '',
-    tags: ['Hunt', 'Puzzles', 'Adventure'],
+    tags: ['Scavenger Hunt', 'Puzzles', 'Adventure'],
     seasons: 'All year',
   },
   {
@@ -95,7 +92,7 @@ const questTypes = [
     title: 'Nature',
     description: 'Connect with nature and the outdoors',
     icon: '',
-    tags: ['Nature', 'Wildlife', 'Outdoors'],
+    tags: ['Nature', 'Outdoors'],
     seasons: 'All year',
   },
   {
@@ -103,7 +100,7 @@ const questTypes = [
     title: 'Entertainment',
     description: 'Exciting quests filled with fun and entertainment',
     icon: '',
-    tags: ['Fun', 'Shows', 'Amusement'],
+    tags: ['Entertainment', 'Fun', 'Shows', 'Amusement'],
     seasons: 'All year',
   },
   {
@@ -119,7 +116,7 @@ const questTypes = [
     title: 'Pub-Crawl',
     description: 'Explore the best pubs and bars in town',
     icon: '',
-    tags: ['Pubs', 'Bars', 'Drinks'],
+    tags: ['Pub-Crawl', 'Pubs', 'Bars', 'Drinks'],
     seasons: 'All year',
   },
   {
@@ -127,7 +124,7 @@ const questTypes = [
     title: 'Event',
     description: 'Participate in local events and festivals',
     icon: '',
-    tags: ['Events', 'Festivals', 'Local'],
+    tags: ['Event', 'Events', 'Festivals', 'Local'],
     seasons: 'All year',
   },
   {
@@ -144,6 +141,14 @@ const questTypes = [
     description: 'An adventure with wildlife and exotic animals',
     icon: '',
     tags: ['Animals', 'Wildlife', 'Family'],
+    seasons: 'All year',
+  },
+  {
+    id: 19,
+    title: 'Top 10',
+    description: 'The Top Ranked Quests in your area',
+    icon: '',
+    tags: ['Top Quests', 'Top Quest', 'Popular', 'Top 10'],
     seasons: 'All year',
   },
 ]

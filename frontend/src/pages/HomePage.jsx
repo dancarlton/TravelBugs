@@ -1,11 +1,21 @@
 import Header from '../layouts/NavBar'
-import Hero from '../sections/home/Hero'
+import Footer from '../layouts/Footer'
+import CarouselsHome from '../sections/home/CarouselsHome'
+import HeroHome from '../sections/home/HeroHome'
 
 const HomePage = () => {
   return (
-    <main className='overflow-x-hidden '>
+    <main className='flex flex-col min-h-screen overflow-x-hidden'>
+
       <Header />
-      <Hero />
+
+      <div className='flex-1'>
+        <HeroHome />
+        <CarouselsHome />
+      </div>
+
+      <Footer />
+
     </main>
   )
 }
