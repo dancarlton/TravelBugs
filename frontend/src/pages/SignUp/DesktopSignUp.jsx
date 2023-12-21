@@ -9,7 +9,7 @@ const DesktopSignUp = () => {
         <div className='flex justify-start z-10'>
           <Link to='/' className='btn btn-ghost'>
             <img
-              src='/icons/logos/logo-main.png'
+              src='/logos/logo-main.png'
               alt='TravelBugs Main Logo'
               className='h-8'
             />
@@ -73,7 +73,7 @@ const DesktopSignUp = () => {
                   </h5>
                   <button className='flex items-center justify-center rounded-xl w-full bg-white h-8 text-black tracking-wide'>
                     <img
-                      src='/icons/socials/google.png'
+                      src='/socials/google.png'
                       alt='Apple'
                       className='h-5 w-5 mr-2'
                     />
@@ -81,7 +81,7 @@ const DesktopSignUp = () => {
                   </button>
                   <button className='flex items-center justify-center rounded-xl w-full bg-white h-8 text-black tracking-wide'>
                     <img
-                      src='/icons/socials/apple.png'
+                      src='/socials/apple.png'
                       alt='Apple'
                       className='h-5 w-5 mr-2'
                     />
@@ -90,7 +90,7 @@ const DesktopSignUp = () => {
 
                   <button className='flex items-center justify-center rounded-xl w-full bg-white h-8 text-black tracking-wide'>
                     <img
-                      src='/icons/socials/facebook.png'
+                      src='/socials/facebook.png'
                       alt='Apple'
                       className='h-5 w-5 mr-2'
                     />

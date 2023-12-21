@@ -153,7 +153,7 @@ const questData = [
     creatorUserName: 'adventurealex',
     creatorRating: 4.6,
     creatorProfilePic: creator1,
-    tags: ['Adventure', 'Exploration', 'City'],
+    tags: ['Adventure', 'Exploration', 'City', 'Historic'],
     rewards: ['Gift Cards', 'Merchandise'],
     itinerary:
       'Begin at the Central Park entrance, then move to the historic downtown, ending at the city viewpoint.',
@@ -178,7 +178,7 @@ const questData = [
     creatorUserName: 'historybuffhelen',
     creatorRating: 4.9,
     creatorProfilePic: creator2,
-    tags: ['History', 'Culture', 'Educational'],
+    tags: ['Historic', 'Culture', 'Educational'],
     rewards: ['Museum Tickets', 'Exclusive Access'],
     itinerary:
       'Start at the Old Town Hall, proceed to the Ancient Library, and finish at the War Memorial.',
@@ -290,13 +290,13 @@ const questData = [
     title: 'Rooftop Bars Hop',
     description:
       'Experience the city’s nightlife with a tour of the best rooftop bars.',
-    imageUrl: twentyone1,
+    imageUrl: twentyone2,
     imageAlt: 'City skyline at night from a rooftop bar',
     ratings: [
       { user: 'User60', rating: 4.7 },
       { user: 'User61', rating: 5.0 },
     ],
-    overallRating: 4.85,
+    overallRating: 2.85,
     ratingTotal: 3215,
     creator: 'Party Pete',
     creatorUserName: 'partypete',
@@ -454,7 +454,7 @@ const questData = [
   {
     id: 17,
     title: 'Gourmet Food Truck Rally',
-    description: 'Sample a variety of gourmet foods from the city’s best food trucks.',
+    description: `Embark on a culinary adventure as you explore the city's vibrant food scene through its best food trucks. This quest invites you to sample a diverse array of gourmet delights, ranging from artisanal street tacos and gourmet burgers to exotic international cuisine and decadent desserts. As you navigate through bustling streets and cozy neighborhoods, each food truck offers a unique flavor experience, crafted by local chefs using fresh, high-quality ingredients.`,
     imageUrl: twentyone2,
     imageAlt: 'A line of food trucks at a park',
     ratings: [

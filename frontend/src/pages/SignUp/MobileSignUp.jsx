@@ -12,7 +12,7 @@ const MobileSignup = () => {
           {/* Increased padding here */}
           <Link to='/' className='btn btn-ghost'>
             <img
-              src='/icons/logos/logo-main.png'
+              src='/logos/logo-main.png'
               alt='TravelBugs Main Logo'
               className='h-20'
             />
@@ -28,7 +28,7 @@ const MobileSignup = () => {
         <div className='flex flex-col gap-y-4'>
           <button className='flex items-center justify-center rounded-xl w-full bg-green h-14 text-black tracking-wide text-xl font-light'>
             <img
-              src='/icons/socials/mail.png'
+              src='/socials/mail.png'
               alt='Apple'
               className='h-5 w-5 mr-2 '
             />
@@ -36,7 +36,7 @@ const MobileSignup = () => {
           </button>
           <button className='flex items-center justify-center rounded-xl w-full border-white border-2 bg-transparent h-14 text-white tracking-wide text-xl font-light'>
             <img
-              src='/icons/socials/google.png'
+              src='/socials/google.png'
               alt='Apple'
               className='h-5 w-5 mr-2 filter invert'
             />
@@ -44,7 +44,7 @@ const MobileSignup = () => {
           </button>
           <button className='flex items-center justify-center rounded-xl w-full border-white border-2 bg-transparent h-14 text-white tracking-wide text-xl font-light'>
             <img
-              src='/icons/socials/apple.png'
+              src='/socials/apple.png'
               alt='Apple'
               className='h-5 w-5 mr-2 filter invert'
             />
@@ -52,7 +52,7 @@ const MobileSignup = () => {
           </button>
           <button className='flex items-center justify-center rounded-xl w-full border-white border-2 bg-transparent h-14 text-white tracking-wide text-xl font-light'>
             <img
-              src='/icons/socials/facebook.png'
+              src='/socials/facebook.png'
               alt='Apple'
               className='h-5 w-5 mr-2 filter invert'
             />
