@@ -312,7 +312,7 @@ const questData = [
 
   {
     id: 11,
-    title: 'Underground Music Scene',
+    title: 'Underground Music Scene ',
     description:
       'Discover hidden music gems and underground artists in the city.',
     imageUrl: twentyone3,

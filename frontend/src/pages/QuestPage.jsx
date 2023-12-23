@@ -5,6 +5,7 @@ import QuestTitle from '../sections/quest/QuestTitle'
 import Footer from '../layouts/Footer'
 import QuestContents from '../sections/quest/QuestContents'
 import { useEffect } from 'react'
+import AskMeAnything from '../sections/quest/AskMeAnything'
 
 const QuestPage = () => {
   const { creatorUserName, formattedTitle } = useParams()
@@ -30,6 +31,7 @@ const QuestPage = () => {
 
       <QuestTitle quest={quest} />
       <QuestContents />
+      <AskMeAnything />
 
       <Footer />
     </main>

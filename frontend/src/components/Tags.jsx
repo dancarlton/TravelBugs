@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
-const Tag = ({ tagData, customStyle }) => {
+const Tags = ({ tagData }) => {
   return (
-    <div className="tag-container">
+    <div className='tag-container'>
       {tagData.map(item => (
-        <Link to={`${item.title}`} key={item.id} className={`${customStyle}`}>
+        <Link to={`${item.title}`} key={item.id} className='search-tag'>
           {item.title}
         </Link>
       ))}
@@ -13,15 +13,13 @@ const Tag = ({ tagData, customStyle }) => {
   )
 }
 
-
-Tag.propTypes = {
+Tags.propTypes = {
   tagData: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired,
     })
   ).isRequired,
-  customStyle: PropTypes.string.isRequired,
 }
 
-export default Tag
+export default Tags

@@ -4,7 +4,7 @@ const HeroHome = () => {
   return (
     <section className='relative flex '>
       <div className='earth-background absolute top-0 left-0 right-0 h-1/2 w-full'>
-        <div className='half-overlay '></div>
+        <div className='half-overlay'></div>
       </div>
 
       {/* Text & Button */}

@@ -3,8 +3,8 @@ import Cards from './Cards'
 
 const Carousels = ({ quests, className }) => {
   return (
-    <div className='carousel w-screen'>
-      {quests.map(card => (
+    <div className='carousel w-screen flex flex-grow'>
+      {quests && quests.map(card => (
         <div key={card.id} className='carousel-item w-70 mr-0 mb-8'>
           <Cards
             title={card.title}
@@ -19,8 +19,8 @@ const Carousels = ({ quests, className }) => {
 }
 
 Carousels.propTypes = {
-  quests: PropTypes.array.isRequired,
-  className: PropTypes.string.isRequired,
+  quests: PropTypes.array,
+  className: PropTypes.string,
 }
 
 export default Carousels

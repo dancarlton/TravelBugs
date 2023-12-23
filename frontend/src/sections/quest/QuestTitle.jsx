@@ -47,9 +47,8 @@ const QuestTitle = ({ quest }) => {
     return stars
   }
 
-
   return (
-    <section className='flex flex-col bg-white'>
+    <section className='flex flex-col bg-white '>
       {/* quest image */}
       <div className='relative ' style={{ maxHeight: '45vh' }}>
         <img
@@ -60,39 +59,56 @@ const QuestTitle = ({ quest }) => {
         <div className='quest-overlay'></div>
       </div>
 
-      {/* Title Contents */}
-      <div className='py-5 px-6 lg:px-36 w-full flex flex-col text-black z-10 '>
+      {/* title contents */}
+      <div className='py-5 px-6 lg:px-36 w-full flex flex-col text-black z-10 min-h-[55vh]' >
+      <div className=' flex flex-row justify-between mr-12'>
         {/* quest tags & ratings */}
-        <div className='flex justify-between items-center mb-6 align-middle gap-y-4'>
-          <div className='flex gap-x-2'>
+          <div className='gap-x-2'>
             <Tag tagData={transformedTags} customStyle='search-tag' />
           </div>
-          <div className='flex gap-x-3 items-center mr-40'>
-            {ratingStars(quest.overallRating)}
-            <img src="/icons/bookmark-empty.png" alt="Bookmark Icon" className='w-6 h-6' />
-            <img src="/icons/share.png" alt="Bookmark Icon" className='w-6 h-6' />
-            <img src="/icons/heart-empty.png" alt="Heart Icon" className='w-6 h-6' />
+        <div className='flex items-center mb-10 gap-y-4'>
 
+          <div className='flex gap-x-3 items-center pr-12'>
+            {ratingStars(quest.overallRating)}
+            <img
+              src='/icons/bookmark-empty.png'
+              alt='Bookmark Icon'
+              className='w-6 h-6'
+            />
+            <img
+              src='/icons/share.png'
+              alt='Bookmark Icon'
+              className='w-6 h-6'
+            />
+            <img
+              src='/icons/heart-empty.png'
+              alt='Heart Icon'
+              className='w-6 h-6'
+            />
           </div>
         </div>
+      </div>
 
         {/* quest title, description, button, avatar, and rating total */}
-        <div className='flex justify-between items-start'>
-          <div className='flex flex-col gap-y-8 w-3/5'>
-            <h1 className='text-6xl mt-12'>{quest.title}</h1>
+        <div className='flex justify-between items-start pb-1'>
+          <div className='flex flex-col gap-y-8 w-3/5 h-1/2'>
+            <h1 className='text-7xl'>{quest.title}</h1>
             <p className='text-lg w-full'>{quest.description}</p>
             <button className='bg-green text-black font-secondary btn btn-circle w-36'>
               <img src='/icons/play.png' alt='Play Button' className='w-4' />
               Start Quest
             </button>
           </div>
-          <div className='avatar flex items-center gap-x-4 justify-center align-middle mr-40 mt-20'>
+          <div className='w-2/5'>
+
+          <div className='avatar flex items-center gap-x-4 justify-center align-middle  mt-20'>
             <div className='w-24 rounded-full bg-gray-300'>
               <img src={quest.creatorProfilePic} />
             </div>
             <h3 className='font-secondary font-extrabold text-xl text-gray-400 whitespace-nowrap'>
               + {quest.ratingTotal.toLocaleString()}
             </h3>
+          </div>
           </div>
         </div>
       </div>

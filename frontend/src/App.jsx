@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import LandingPage from './pages/LandingPage';
 import HomePage from './pages/HomePage';
 import SearchPage from './pages/SearchPage';
-import SignUpPage from './pages/SignUpPage';
+import SignUpPage from './pages/SignUp/SignUpPage.jsx';
 import QuestPage from './pages/QuestPage';
 
 function App() {

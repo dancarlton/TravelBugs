@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import DesktopSignUp from './SignUp/DesktopSignUp'
-import MobileSignup from './SignUp/MobileSignup';
+import DesktopSignUp from './DesktopSignUp'
+import MobileSignup from './MobileSignup';
 
 const SignUpPage = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);

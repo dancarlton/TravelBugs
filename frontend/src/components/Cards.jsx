@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
-const Cards = ({ className, imageUrl, title, creatorUserName, context }) => {
+const Cards = ({ className, imageUrl, title, creatorUserName }) => {
 
   const formattedTitle = title.replace(/\s+/g, '-').toLowerCase()
 
