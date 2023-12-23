@@ -4,7 +4,7 @@ import trail2 from '/overlays/trail2.svg'
 
 const AskMeAnything = () => {
   return (
-    <section className='flex px-28 mt-40 h-full justify-center items-center align-middle '>
+    <section className='flex px-28 py-6 mt-40 h-screen justify-center items-center align-middle '>
       <div className='flex flex-col w-3/5 gap-y-0 mt-52 pl-20 pb-0  justify-center '>
         <h1 className='font-title text-4xl font-bold mb-6 text-white '>
           Ask me Anything!

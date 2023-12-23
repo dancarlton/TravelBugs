@@ -10,13 +10,14 @@ const Carousels = ({ quests, className }) => {
             title={card.title}
             imageUrl={card.imageUrl}
             creatorUserName={card.creatorUserName}
-            className={`${className} mr-2`}
+            className={`${className} mr-2`} // `className` contains both base and modifier classes
           />
         </div>
       ))}
     </div>
-  )
-}
+  );
+};
+
 
 Carousels.propTypes = {
   quests: PropTypes.array,

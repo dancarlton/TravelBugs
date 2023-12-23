@@ -25,15 +25,7 @@ const CreatorSignup = () => {
               className=' h-4 w-4'
             />
           </Link>
-          {/* <div className='mt-14 md:mt-16 lg:mt-20 h-14 w-14 rounded-full border-2 border-white flex items-center justify-center'>
-            <a className="scroll-smooth" href="#info-section">
-              <img
-                src='/icons/right-arrow.png'
-                alt='Down Arrow'
-                className='rotate-90 h-6 invert'
-              />
-            </a>
-          </div> */}
+          
         </div>
       </div>
     </section>

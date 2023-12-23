@@ -137,15 +137,16 @@ body {
   border-radius: 8px;
 }
 
-.medium-card {
+.square-card {
   position: relative;
   object-fit: cover;
   background-size: contain;
   background-position: center;
-  top: 334px;
-  left: 63px;
-  width: 201px;
-  height: 283px;
+  /* top: 334px; */
+  /* left: 63px; */
+  width: 280px;
+  height: 240px;
+  border-radius: 8px;
 }
 
 .large-card {
@@ -159,6 +160,63 @@ body {
   border-radius: 8px;
   /* overflow-y: auto; */
 }
+
+.content-card {
+  /* position: absolute; */
+  top: 192px;
+  left: 133px;
+  width: 275px;
+  height: 320px;
+  background: #FFFFFFFF;
+  border-radius: 12px;
+  box-shadow: 0px 2px 5px #171a1f, 0px 0px 2px #171a1f;
+  /* position: absolute; */
+  top: 192px;
+  left: 133px;
+  width: 275px;
+  height: 320px;
+  background: #FFFFFFFF;
+  border-radius: 12px;
+  box-shadow: 0px 2px 5px #171a1f, 0px 0px 2px #171a1f;
+  /* position: absolute; */
+  top: 192px;
+  left: 133px;
+  width: 275px;
+  height: 320px;
+  background: #FFFFFFFF;
+  border-radius: 12px;
+  box-shadow: 0px 2px 5px #171a1f, 0px 0px 2px #171a1f;
+}
+
+.content-card-container{
+  position: absolute;
+  top: 192px;
+  left: 133px;
+  width: 275px;
+  height: 320px;
+  background: #FFFFFFFF;
+  border-radius: 12px;
+  box-shadow: 0px 2px 5px #171a1f, 0px 0px 2px #171a1f;
+}
+.content-card-image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 275px;
+  height: 184px;
+  border-radius: 12px 12px 0px 0px;
+}
+.content-card-content {
+  position: absolute;
+  top: 192px;
+  left: 133px;
+  width: 275px;
+  height: 320px;
+  background: #FFFFFFFF;
+  border-radius: 12px;
+  box-shadow: 0px 2px 5px #171a1f, 0px 0px 2px #171a1f;
+}
+
 
 /********** Custom Texts ***********/
 
