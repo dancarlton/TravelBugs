@@ -48,7 +48,7 @@ const QuestTitle = ({ quest }) => {
   }
 
   return (
-    <section className='flex flex-col bg-white '>
+    <section className='flex flex-col bg-white'>
       {/* quest image */}
       <div className='relative ' style={{ maxHeight: '45vh' }}>
         <img
@@ -60,15 +60,15 @@ const QuestTitle = ({ quest }) => {
       </div>
 
       {/* title contents */}
-      <div className='py-5 px-6 lg:px-36 w-full flex flex-col text-black z-10 min-h-[55vh]' >
-      <div className=' flex flex-row justify-between mr-12'>
+      <div className='py-5 px-6 lg:px-36 flex flex-col text-black z-10 min-h-[55vh]' >
+      <div className='flex flex-col lg:flex-row justify-between lg:mr-12'>
         {/* quest tags & ratings */}
-          <div className='gap-x-2'>
+          <div className='gap-x-2 flex flex-col items-center mb-4 lg:mb-0'>
             <Tag tagData={transformedTags} customStyle='search-tag' />
           </div>
-        <div className='flex items-center mb-10 gap-y-4'>
+        <div className='flex flex-col items-center mb-10'>
 
-          <div className='flex gap-x-3 items-center pr-12'>
+          <div className='flex gap-x-3 items-center lg:pr-12'>
             {ratingStars(quest.overallRating)}
             <img
               src='/icons/bookmark-empty.png'
@@ -90,18 +90,18 @@ const QuestTitle = ({ quest }) => {
       </div>
 
         {/* quest title, description, button, avatar, and rating total */}
-        <div className='flex justify-between items-start pb-1'>
-          <div className='flex flex-col gap-y-8 w-3/5 h-1/2'>
-            <h1 className='text-7xl'>{quest.title}</h1>
+        <div className='flex flex-col lg:flex-row lg:justify-between lg:items-start pb-1'>
+          <div className='flex flex-col gap-y-8 lg:w-3/5 h-1/2'>
+            <h1 className='text-4xl lg:text-7xl'>{quest.title}</h1>
             <p className='text-lg w-full'>{quest.description}</p>
-            <button className='bg-green text-black font-secondary btn btn-circle w-36'>
+            <button className='bg-green text-black font-secondary btn btn-circle w-36 '>
               <img src='/icons/play.png' alt='Play Button' className='w-4' />
               Start Quest
             </button>
           </div>
           <div className='w-2/5'>
 
-          <div className='avatar flex items-center gap-x-4 justify-center align-middle  mt-20'>
+          <div className='avatar flex items-center gap-x-4 justify-center align-middle  mt-6 lg:mt-20'>
             <div className='w-24 rounded-full bg-gray-300'>
               <img src={quest.creatorProfilePic} />
             </div>

@@ -28,7 +28,7 @@ const QuestPage = () => {
 
 
   return (
-    <main className='bg-white h-screen flex flex-col' style={{ backgroundColor: 'white' }}>
+    <main className='bg-white max-h-screen flex flex-col' style={{ backgroundColor: 'white' }}>
       <NavBar />
 
       <QuestTitle quest={quest} />

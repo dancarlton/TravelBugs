@@ -4,12 +4,12 @@ import trail2 from '/overlays/trail2.svg'
 
 const AskMeAnything = () => {
   return (
-    <section className='flex px-28 py-6 mt-40 h-screen justify-center items-center align-middle '>
-      <div className='flex flex-col w-3/5 gap-y-0 mt-52 pl-20 pb-0  justify-center '>
-        <h1 className='font-title text-4xl font-bold mb-6 text-white '>
+    <section className='flex lg:px-28 lg:py-6   '>
+      <div className='flex flex-col lg:w-3/5 gap-y-0  pl-20 pb-0   '>
+        <h1 className='font-title text-4xl font-bold my-6 text-white '>
           Ask me Anything!
         </h1>
-        <form action='' className='w-2/3 flex flex-col gap-y-2'>
+        <form action='' className='lg:w-2/3 flex flex-col gap-y-2'>
           {/* Input for the name */}
           <label
             htmlFor='name'
@@ -57,7 +57,7 @@ const AskMeAnything = () => {
           {/* Submit button */}
           <button
             type='submit'
-            className='btn-primary bg-gray-500 font-secondary rounded-lg py-2 px-2 mb-2'
+            className='btn-primary bg-gray-500 font-secondary rounded-lg py-2 px-2 mb-6'
           >
             Send message
           </button>
@@ -65,10 +65,10 @@ const AskMeAnything = () => {
         <img
           src={trail1}
           alt='Squiggly line'
-          className='relative bottom-[500px] right-96 w-[300px] h-[450px] rounded-none shadow-lg -z-10 object-cover'
+          className='relative lg:bottom-[500px] lg:right-96 lg:w-[300px] lg:h-[450px] rounded-none shadow-lg -z-10 object-cover hidden lg:block'
         />
       </div>
-      <div className='w-2/5 flex flex-col justify-start gap-y-0 mt-52'>
+      <div className='w-2/5 lg:flex flex-col justify-start gap-y-0 hidden'>
         <img
           src={questionImage}
           alt='Dog Raising Hand'
@@ -77,7 +77,7 @@ const AskMeAnything = () => {
         <img
           src={trail2}
           alt='Squiggly line'
-          className='relative -top-96 left-[450px] w-[196px] h-[507px] rounded-none shadow-lg -z-10'
+          className='relative -top-96 lg:left-[450px] lg:w-[196px] lg:h-[507px] rounded-none shadow-lg -z-10 hidden lg:block'
         />
       </div>
     </section>
