@@ -26,13 +26,19 @@ const NavBar = () => {
             className='menu menu-sm dropdown-content mt-3  p-2 shadow bg-base-100 rounded-box w-52'
           >
             <li>
-              <a>Homepage</a>
+              <Link to='/'>
+                <a>Home</a>
+              </Link>
             </li>
             <li>
-              <a>Portfolio</a>
+            <Link to='/home'>
+              <a>Quests</a>
+              </Link>
             </li>
             <li>
-              <a>About</a>
+            <Link to='/about'>
+              <a>About Us</a>
+              </Link>
             </li>
           </ul>
         </div>
