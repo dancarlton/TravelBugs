@@ -36,7 +36,6 @@ const QuestPage = () => {
       <AskMeAnything />
       <ExplorerExperiences />
       <OtherQuests />
-
       <Footer />
     </main>
   )
