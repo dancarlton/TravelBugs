@@ -2,6 +2,8 @@ import PropTypes from 'prop-types'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
+// test 1 2
+
 const Cards = ({ className, coverPhoto, questName, questCreator }) => {
   const [ quest, setQuest] = useState(null)
 
@@ -23,7 +25,7 @@ const Cards = ({ className, coverPhoto, questName, questCreator }) => {
   return (
     <Link to={`/quest/${questCreator}/${formattedTitle}`}>
       <div className={`${className}`}>
-        <img title={questName} src={coverPhoto} alt={questName} className={className} />
+        <img title={questName} src={coverPhoto} alt={quest.title} className={className} />
       </div>
     </Link>
   )
