@@ -7,9 +7,9 @@ const Carousels = ({ quests, className }) => {
       {quests && quests.map(card => (
         <div key={card.id} className='carousel-item w-70 mr-0 mb-8'>
           <Cards
-            title={card.title}
-            imageUrl={card.imageUrl}
-            creatorUserName={card.creatorUserName}
+            questName={card.questName}
+            coverPhoto={card.coverPhoto}
+            questCreator={card.questCreator}
             className={`${className} mr-2`} // `className` contains both base and modifier classes
           />
         </div>
