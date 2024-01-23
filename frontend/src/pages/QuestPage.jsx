@@ -12,6 +12,9 @@ import OtherQuests from '../sections/quest/OtherQuests'
 const QuestPage = () => {
   const { creatorUserName, formattedTitle } = useParams()
 
+
+
+
   useEffect(() => {
     window.scrollTo(0,0)
   },[creatorUserName, formattedTitle])

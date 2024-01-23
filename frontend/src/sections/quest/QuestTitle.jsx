@@ -1,51 +1,53 @@
-import PropTypes from 'prop-types'
-import Tag from '../../components/Tags'
+import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+import axios from 'axios';
+import Tag from '../../components/Tags';
 
-const QuestTitle = ({ quest }) => {
-  // Transform tags into the required format
+const QuestTitle = ({ match }) => { // Assuming 'match' is passed as a prop
+  const [quest, setQuest] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchQuest = async () => {
+      try {
+        setIsLoading(true);
+        const questId = match.params.questId; // Ensure questId is correctly obtained
+        const response = await axios.get(`/api/quests/${questId}`);
+        setQuest(response.data);
+        setIsLoading(false);
+      } catch (err) {
+        setError(err.message);
+        setIsLoading(false);
+      }
+    };
+
+    fetchQuest();
+  }, [match.params.questId]);
+
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
+  if (!quest) return <div>No quest found.</div>;
+
   const transformedTags = quest.tags.map((tag, index) => ({
-    id: index, // Assuming no unique ID is available
+    id: index,
     title: tag,
-  }))
+  }));
 
   const ratingStars = rating => {
-    const MAX_STARS = 5
-    let stars = []
+    const MAX_STARS = 5;
+    let stars = [];
     for (let i = 0; i < MAX_STARS; i++) {
       if (i < Math.floor(rating)) {
-        // full stars
-        stars.push(
-          <img
-            key={i}
-            src='/icons/star.png'
-            alt='star'
-            className='inline-block w-4 h-4'
-          />
-        )
+        stars.push(<img key={i} src='/icons/star.png' alt='star' className='inline-block w-4 h-4' />);
       } else if (i === Math.floor(rating) && rating % 1 !== 0) {
-        // half star
-        stars.push(
-          <img
-            key={i}
-            src='/icons/star-half.png'
-            alt='Half Star'
-            className='inline-block w-4 h-4'
-          />
-        )
+        stars.push(<img key={i} src='/icons/star-half.png' alt='Half Star' className='inline-block w-4 h-4' />);
       } else {
-        // empty stars
-        stars.push(
-          <img
-            key={i}
-            src='/icons/star.png'
-            alt='Empty Star'
-            className='inline-block w-4 h-4 grayscale opacity-50'
-          />
-        )
+        stars.push(<img key={i} src='/icons/star.png' alt='Empty Star' className='inline-block w-4 h-4 grayscale opacity-50' />);
       }
     }
-    return stars
-  }
+    return stars;
+  };
 
   return (
     <section className='flex flex-col bg-white'>
