@@ -2,22 +2,11 @@ const mongoose = require('mongoose')
 
 const userSchema = new mongoose.Schema(
   {
-    id: {
-      type: Number,
-      required: true,
-      unique: true,
-    },
     username: {
       type: String,
       required: true,
-      unique: true,
     },
     email: {
-      type: String,
-      required: true,
-      unique: true,
-    },
-    passwordHash: {
       type: String,
       required: true,
     },
@@ -25,7 +14,7 @@ const userSchema = new mongoose.Schema(
     bio: String,
     userType: {
       type: String,
-      required: true,
+      enum: ['Explorer', 'Creator', 'Provider'],
     },
   },
   { timestamps: true }
